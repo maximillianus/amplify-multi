@@ -5,7 +5,7 @@ applications:
         preBuild:
           commands:
             - yarn install
-            - amplify pull --appId drvgi9rf8ppjo --envName $AWS_BRANCH --y
+            - amplify pull --appId $APP_ID --envName $AWS_BRANCH --y
             - rm -Rf amplify/
             - ls -la
         build:
