@@ -7,7 +7,7 @@ applications:
             - yarn install
             - amplify pull --appId $AWS_APP_ID --envName $AWS_BRANCH --y
             - rm -Rf amplify/
-            - ls -l
+            - ls -la
         build:
           commands:
             - yarn run build
